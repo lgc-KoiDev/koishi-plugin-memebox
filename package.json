@@ -1,14 +1,16 @@
 {
   "name": "koishi-plugin-memebox",
   "description": "Use Koishi bots to view pictures in MemeBox based website",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [
     "lib",
     "dist"
   ],
+  "author": "student_2333 <lgc2333@126.com>",
   "license": "MIT",
+  "homepage": "https://github.com/lgc2333/koishi-plugin-memebox",
   "keywords": [
     "chatbot",
     "koishi",
