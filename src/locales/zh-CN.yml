@@ -1,0 +1,48 @@
+commands:
+  memebox:
+    description: 随机梗图
+    options:
+      source: 指定梗图来源，不指定则随机选择。
+    messages:
+      source-not-found: 未找到指定图片来源。
+      meme-not-found: 未找到图片。
+      multiple-memes-found: |-
+        找到多个图片，请发送序号选择：
+        {0}
+        输入其他内容退出选择。
+      item-in-list: '{0}. {1}'
+      invalid-input-quit: 无效的输入，已退出选择。
+      fetch-failed: 获取图片失败。
+      meme-info: |-
+        # {0}
+        {1}
+        来自 {2}
+    list:
+      description: 查询图片来源列表。
+      messages:
+        source-list: |-
+          目前可用的图片来源：
+          {0}
+        item-in-source-list: ' - {0}（{1}）'
+
+_config:
+  - $desc: 基础配置
+    updateCron: 更新各来源图片列表的定时 cron 表达式。
+    maxListCount: 搜索结果中要展示的图片列表最大数量。
+
+  - $desc: 来源配置
+    origins:
+      $inner:
+        identifier: 来源标识名称。
+        displayName: 来源显示名称，不填写则使用标识名称。
+        baseURL: 来源 MemeBox 网站 URL。
+        shortcuts: 快捷使用来源网站的触发指令列表。
+        requestConfig: &requestConfig
+          timeout: 等待连接建立的最长时间。
+          proxyAgent: 使用的代理服务器地址。
+          keepAlive: 是否保持连接。
+          endpoint: 要连接的服务器地址。
+          headers: 要附加的额外请求头。
+
+  - $desc: 请求设置
+    <<: *requestConfig

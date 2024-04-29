@@ -1,7 +1,7 @@
 {
   "name": "koishi-plugin-memebox",
   "description": "",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [
@@ -9,14 +9,34 @@
     "dist"
   ],
   "license": "MIT",
-  "scripts": {},
   "keywords": [
     "chatbot",
     "koishi",
-    "plugin"
+    "plugin",
+    "meme",
+    "memebox"
   ],
-  "devDependencies": {},
+  "koishi": {
+    "description": {
+      "zh": "一站式展示基于 MemeBox 的网站的梗图"
+    },
+    "service": {
+      "required": [
+        "cron"
+      ],
+      "implements": [
+        "memebox"
+      ]
+    },
+    "locales": [
+      "zh"
+    ]
+  },
   "peerDependencies": {
-    "koishi": "^4.17.4"
+    "koishi": "^4.17.4",
+    "koishi-plugin-cron": "^3.1.0"
+  },
+  "dependencies": {
+    "json5": "^2.2.3"
   }
 }
