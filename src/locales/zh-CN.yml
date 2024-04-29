@@ -5,6 +5,7 @@ commands:
       source: 指定梗图来源，不指定则随机选择。
     messages:
       source-not-found: 未找到指定图片来源。
+      fetch-list-failed: 获取图片列表失败。
       meme-not-found: 未找到图片。
       multiple-memes-found: |-
         找到多个图片，请发送序号选择：
@@ -12,7 +13,7 @@ commands:
         输入其他内容退出选择。
       item-in-list: '{0}. {1}'
       invalid-input-quit: 无效的输入，已退出选择。
-      fetch-failed: 获取图片失败。
+      fetch-image-failed: 获取图片失败。
       meme-info: |-
         # {0}
         {1}

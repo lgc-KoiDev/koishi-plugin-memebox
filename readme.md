@@ -12,7 +12,7 @@
 
 # Koishi-Plugin-MemeBox
 
-_✨ 一站式展示基于 MemeBox 的梗图网站 ✨_
+_✨ 针对基于 MemeBox 的梗图网站的一站式解决方案，随时查看群友语录 ✨_
 
 <a href="./LICENSE">
   <img src="https://img.shields.io/github/license/lgc2333/koishi-plugin-memebox.svg" alt="license">
@@ -23,15 +23,24 @@ _✨ 一站式展示基于 MemeBox 的梗图网站 ✨_
 <a href="https://www.npmjs.com/package/koishi-plugin-memebox">
   <img src="https://img.shields.io/npm/dm/koishi-plugin-memebox" alt="pypi download">
 </a>
-<a href="https://wakatime.com/badge/user/b61b0f9a-f40b-4c82-bc51-0a75c67bfccf/project/79af41ae-0173-4c1f-9db2-f87d94569c76">
-  <img src="https://wakatime.com/badge/user/b61b0f9a-f40b-4c82-bc51-0a75c67bfccf/project/79af41ae-0173-4c1f-9db2-f87d94569c76.svg" alt="wakatime">
+<a href="https://wakatime.com/badge/user/b61b0f9a-f40b-4c82-bc51-0a75c67bfccf/project/550fa0b7-6610-4745-8349-9680727333c6">
+  <img src="https://wakatime.com/badge/user/b61b0f9a-f40b-4c82-bc51-0a75c67bfccf/project/550fa0b7-6610-4745-8349-9680727333c6.svg" alt="wakatime">
 </a>
 
 </div>
 
 ## 📖 介绍
 
-没有
+不提供任何参数从已有源中随机抽取发送  
+![Preview](https://raw.githubusercontent.com/lgc2333/koishi-workspace/master/readme/memebox/1.png)
+
+可以自定义某图片源使用的指令别名  
+![Preview](https://raw.githubusercontent.com/lgc2333/koishi-workspace/master/readme/memebox/2.png)
+
+带参数可以搜索  
+![Preview](https://raw.githubusercontent.com/lgc2333/koishi-workspace/master/readme/memebox/3.png)
+
+下载插件体验所有功能，一站式观看两边群友发电，快来下载~~~~~~~！
 
 ## 💡 鸣谢
 

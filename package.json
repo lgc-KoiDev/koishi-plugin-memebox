@@ -1,6 +1,6 @@
 {
   "name": "koishi-plugin-memebox",
-  "description": "",
+  "description": "Use Koishi bots to view pictures in MemeBox based website",
   "version": "0.1.0",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -18,7 +18,7 @@
   ],
   "koishi": {
     "description": {
-      "zh": "一站式展示基于 MemeBox 的网站的梗图"
+      "zh": "针对基于 MemeBox 的梗图网站的一站式解决方案，随时查看群友语录"
     },
     "service": {
       "required": [
