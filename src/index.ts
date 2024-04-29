@@ -1,6 +1,6 @@
+import { HTTP } from '@cordisjs/plugin-http'
 import { Context, h, Schema } from 'koishi'
 import {} from 'koishi-plugin-cron'
-import { HTTP } from 'undios'
 
 import { name } from './const'
 import zhCNLocale from './locales/zh-CN.yml'

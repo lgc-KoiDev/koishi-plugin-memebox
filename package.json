@@ -1,7 +1,7 @@
 {
   "name": "koishi-plugin-memebox",
   "description": "Use Koishi bots to view pictures in MemeBox based website",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [
@@ -35,7 +35,7 @@
     ]
   },
   "peerDependencies": {
-    "koishi": "^4.17.4",
+    "koishi": "^4.17.5",
     "koishi-plugin-cron": "^3.1.0"
   },
   "dependencies": {

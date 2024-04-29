@@ -1,9 +1,9 @@
+import { HTTP } from '@cordisjs/plugin-http'
 import { Context, Schema, Service } from 'koishi'
-import { HTTP } from 'undios'
 
 import { name } from '../const'
-import { MemeBoxOrigin } from './source'
 import { randomItem } from '../utils'
+import { MemeBoxOrigin } from './source'
 
 declare module 'koishi' {
   interface Context {
