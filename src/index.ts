@@ -8,7 +8,7 @@ import { MemeBox } from './service'
 import { MemeBoxOrigin, MemeInfo, MemeInfoWithData } from './service/source'
 
 export { name }
-export const inject = ['cron']
+export const inject = ['http', 'cron']
 
 export interface Config extends MemeBox.Config {
   updateCron: string
