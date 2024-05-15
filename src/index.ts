@@ -21,7 +21,7 @@ export const Config: Schema<Config> = Schema.intersect([
       .default('0 * * * *'),
     maxListCount: Schema.number().default(5),
   }),
-  ...MemeBox.Config.list,
+  ...(MemeBox.Config.list as Schema<any, any>[]),
 ]).i18n({
   'zh-CN': zhCNLocale._config,
   zh: zhCNLocale._config,
@@ -48,8 +48,9 @@ export function apply(ctx: Context, config: Config) {
       }
     }
 
-    cmd.subcommand('.list').action(async ({ session }) =>
-      session.text('.source-list', [
+    cmd.subcommand('.list').action(async ({ session }) => {
+      if (!session) return
+      return session.text('.source-list', [
         ctx.memebox
           .getSourceList()
           .map((source) =>
@@ -59,10 +60,11 @@ export function apply(ctx: Context, config: Config) {
             ]),
           )
           .join('\n'),
-      ]),
-    )
+      ])
+    })
 
     cmd.action(async ({ session, options }, keyword) => {
+      if (!session || !options) return
       // if (!name) return session.execute('help memebox')
       if (keyword === 'list') return session.execute('memebox.list')
 

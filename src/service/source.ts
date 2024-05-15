@@ -29,7 +29,7 @@ export class MemeBoxOrigin {
   public readonly displayName: string
   protected http: HTTP
   protected cache: CacheManager
-  protected memeList: Record<string, string>
+  protected memeList: Record<string, string> = {}
 
   constructor(
     protected ctx: Context,
