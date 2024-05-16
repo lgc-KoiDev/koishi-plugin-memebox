@@ -1,11 +1,12 @@
 import { HTTP } from '@cordisjs/plugin-http'
 import { Context, h, Schema } from 'koishi'
-import {} from 'koishi-plugin-cron'
 
 import { name } from './const'
 import zhCNLocale from './locales/zh-CN.yml'
 import { MemeBox } from './service'
 import { MemeBoxOrigin, MemeInfo, MemeInfoWithData } from './service/source'
+
+import {} from 'koishi-plugin-cron'
 
 export { name }
 export const inject = ['http', 'cron']
