@@ -57,7 +57,7 @@ export class MemeBox extends Service<MemeBox.Config> {
           ),
         ),
       )
-    ).flatMap((v) => v)
+    ).flat()
     const [source, key] = randomItem(memes)
     return source.getMemeByName(key)
   }
@@ -68,7 +68,7 @@ export class MemeBox extends Service<MemeBox.Config> {
         this.sources.map((source) => source.searchMemeInternal(keyword)),
       )
     )
-      .flatMap((v) => v)
+      .flat()
       .sort()
   }
 
