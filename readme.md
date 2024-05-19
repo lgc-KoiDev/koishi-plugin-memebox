@@ -3,11 +3,11 @@
 <div align="center">
 
 <a href="https://koishi.chat/zh-CN/market/">
-  <img src="https://raw.githubusercontent.com/lgc2333/koishi-workspace/master/readme/koishi-plugin.png" width="180" height="180" alt="NoneBotPluginLogo">
+  <img src="https://raw.githubusercontent.com/lgc-KoiDev/readme/master/workspace/koishi-plugin.png" width="180" height="180" alt="NoneBotPluginLogo">
 </a>
 
 <p>
-  <img src="https://raw.githubusercontent.com/lgc2333/koishi-workspace/master/readme/KoishiPlugin.svg" width="240" alt="NoneBotPluginText">
+  <img src="https://raw.githubusercontent.com/lgc-KoiDev/readme/master/workspace/KoishiPlugin.svg" width="240" alt="NoneBotPluginText">
 </p>
 
 # Koishi-Plugin-MemeBox
@@ -15,7 +15,7 @@
 _✨ 针对基于 MemeBox 的梗图网站的一站式解决方案，随时查看群友语录 ✨_
 
 <a href="./LICENSE">
-  <img src="https://img.shields.io/github/license/lgc2333/koishi-plugin-memebox.svg" alt="license">
+  <img src="https://img.shields.io/github/license/lgc-KoiDev/koishi-plugin-memebox.svg" alt="license">
 </a>
 <a href="https://www.npmjs.com/package/koishi-plugin-memebox">
   <img src="https://img.shields.io/npm/v/koishi-plugin-memebox" alt="pypi">
@@ -32,13 +32,13 @@ _✨ 针对基于 MemeBox 的梗图网站的一站式解决方案，随时查看
 ## 📖 介绍
 
 不提供任何参数从已有源中随机抽取发送  
-![Preview](https://raw.githubusercontent.com/lgc2333/koishi-workspace/master/readme/memebox/1.png)
+![Preview](https://raw.githubusercontent.com/lgc-KoiDev/readme/master/workspace/memebox/1.png)
 
 可以自定义某图片源使用的指令别名  
-![Preview](https://raw.githubusercontent.com/lgc2333/koishi-workspace/master/readme/memebox/2.png)
+![Preview](https://raw.githubusercontent.com/lgc-KoiDev/readme/master/workspace/memebox/2.png)
 
 带参数可以搜索  
-![Preview](https://raw.githubusercontent.com/lgc2333/koishi-workspace/master/readme/memebox/3.png)
+![Preview](https://raw.githubusercontent.com/lgc-KoiDev/readme/master/workspace/memebox/3.png)
 
 下载插件体验所有功能，一站式观看两边群友发电，快来下载~~~~~~~！
 
