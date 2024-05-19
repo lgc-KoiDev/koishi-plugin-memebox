@@ -56,12 +56,8 @@ export class MemeBoxOrigin {
         })
       ).replace('export default {', '{'),
     )
-    this.ctx.logger.info(
-      `Got ${items.length} memes from source ${this.identifier}.`,
-    )
-    this.memeList = Object.fromEntries(
-      items.map((url) => [extractStem(url), url]),
-    )
+    this.ctx.logger.info(`Got ${items.length} memes from source ${this.identifier}.`)
+    this.memeList = Object.fromEntries(items.map((url) => [extractStem(url), url]))
     return this.memeList
   }
 
@@ -91,10 +87,7 @@ export class MemeBoxOrigin {
 
     const result: [number, [string, string]][] = []
     for (const it of list) {
-      const score = params.reduce(
-        (acc, cur) => acc + (it[0].includes(cur) ? 1 : 0),
-        0,
-      )
+      const score = params.reduce((acc, cur) => acc + (it[0].includes(cur) ? 1 : 0), 0)
       if (score) result.push([score, it])
     }
 

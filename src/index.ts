@@ -34,8 +34,7 @@ export function apply(ctx: Context, config: Config) {
 
   ctx.plugin(MemeBox, config)
   ctx.inject([name], (ctx) => {
-    const updateAll = () =>
-      ctx.memebox.updateAll().catch((e) => ctx.logger.warn(e))
+    const updateAll = () => ctx.memebox.updateAll().catch((e) => ctx.logger.warn(e))
     ctx.cron(config.updateCron, updateAll)
     // updateAll()
 
@@ -78,9 +77,7 @@ export function apply(ctx: Context, config: Config) {
 
       let source: MemeBox | MemeBoxOrigin
       try {
-        source = options.source
-          ? ctx.memebox.getSource(options.source)
-          : ctx.memebox
+        source = options.source ? ctx.memebox.getSource(options.source) : ctx.memebox
       } catch (e) {
         return session.text('.source-not-found')
       }
@@ -103,9 +100,7 @@ export function apply(ctx: Context, config: Config) {
           session.text('.multiple-memes-found', [
             searchResult
               .slice(0, config.maxListCount)
-              .map((meme, i) =>
-                session.text('.item-in-list', [i + 1, meme.name]),
-              )
+              .map((meme, i) => session.text('.item-in-list', [i + 1, meme.name]))
               .join('\n'),
           ]),
         )
@@ -121,9 +116,7 @@ export function apply(ctx: Context, config: Config) {
 
       let resp: MemeInfoWithData
       try {
-        const actualSource = ctx.memebox.getSource(
-          selectedMeme.originIdentifier,
-        )
+        const actualSource = ctx.memebox.getSource(selectedMeme.originIdentifier)
         resp = await actualSource.fetchMeme(selectedMeme.url)
       } catch (e) {
         return warnHttpErr(e, '.fetch-image-failed')

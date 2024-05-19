@@ -23,19 +23,14 @@ export class MemeBox extends Service<MemeBox.Config> {
   ) {
     super(ctx, name)
     for (const origin of config.origins) {
-      const requestConfig = HTTP.mergeConfig(
-        config.requestConfig,
-        origin.requestConfig,
-      )
+      const requestConfig = HTTP.mergeConfig(config.requestConfig, origin.requestConfig)
       const cls = new MemeBoxOrigin(ctx, { ...origin, requestConfig })
       this.sources.push(cls)
     }
   }
 
   getSource(identifier: string) {
-    const source = this.sources.find(
-      (source) => source.identifier === identifier,
-    )
+    const source = this.sources.find((source) => source.identifier === identifier)
     if (!source) throw new Error(`Source ${identifier} not found`)
     return source
   }

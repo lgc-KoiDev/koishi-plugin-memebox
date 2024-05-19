@@ -48,10 +48,7 @@ export class CacheManager {
     return new Blob([data], { type })
   }
 
-  async readOrGet(
-    filename: string,
-    getter: () => Promise<Blob>,
-  ): Promise<Blob> {
+  async readOrGet(filename: string, getter: () => Promise<Blob>): Promise<Blob> {
     let blob = await this.read(filename)
     if (blob) return blob
 
