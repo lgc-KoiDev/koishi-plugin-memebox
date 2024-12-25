@@ -1,5 +1,4 @@
-import { HTTP } from '@cordisjs/plugin-http'
-import { Context, Schema, Service } from 'koishi'
+import { Context, HTTP, Schema, Service } from 'koishi'
 
 import { name } from '../const'
 import { randomItem } from '../utils'

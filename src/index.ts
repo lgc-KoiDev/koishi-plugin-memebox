@@ -1,5 +1,4 @@
-import { HTTP } from '@cordisjs/plugin-http'
-import { Context, h, Schema } from 'koishi'
+import { Context, h, HTTP, Schema } from 'koishi'
 
 import { name } from './const'
 import zhCNLocale from './locales/zh-CN.yml'

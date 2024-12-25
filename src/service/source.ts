@@ -1,6 +1,5 @@
-import { HTTP } from '@cordisjs/plugin-http'
 import JSON5 from 'json5'
-import { Context, Schema } from 'koishi'
+import { Context, HTTP, Schema } from 'koishi'
 
 import { CacheManager } from '../cache'
 import { randomItem } from '../utils'
