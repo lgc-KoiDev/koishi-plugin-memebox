@@ -1,11 +1,10 @@
-import { Context, h, HTTP, Schema } from 'koishi'
+import { Context, HTTP, Schema, h } from 'koishi'
+import 'koishi-plugin-cron'
 
 import { name } from './const'
 import zhCNLocale from './locales/zh-CN.yml'
 import { MemeBox } from './service'
 import { MemeBoxOrigin, MemeInfo, MemeInfoWithData } from './service/source'
-
-import {} from 'koishi-plugin-cron'
 
 export { name }
 export const inject = ['http', 'cron']
