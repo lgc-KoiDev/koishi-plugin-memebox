@@ -50,7 +50,7 @@ _✨ 针对基于 MemeBox 的梗图网站的一站式解决方案，随时查看
 
 QQ：3076823485  
 Telegram：[@lgc2333](https://t.me/lgc2333)  
-吹水群：[1105946125](https://jq.qq.com/?_wv=1027&k=Z3n1MpEp)  
+吹水群：[168603371](https://qm.qq.com/q/EikuZ5sP4G)  
 邮箱：<lgc2333@126.com>
 
 ## 💰 赞助
