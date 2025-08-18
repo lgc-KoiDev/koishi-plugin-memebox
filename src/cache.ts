@@ -45,7 +45,7 @@ export class CacheManager {
 
     const data = await fs.readFile(path)
     const { type }: CacheMeta = JSON.parse(await fs.readFile(metaPath, 'utf-8'))
-    return new Blob([data], { type })
+    return new Blob([data.buffer as ArrayBuffer], { type })
   }
 
   async readOrGet(filename: string, getter: () => Promise<Blob>): Promise<Blob> {
